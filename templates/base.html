@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemalist | {{pag}}</title>
+</head>
+<body>
+
+    <!-- ====================================================================== -->
+        <!-- O Template base serve para criar um estilo e uma estrutura padrão para todas as páginas do nosso sistema.
+        Note o uso de váriaveis python com a sintaxe '{{nome_variavel}}' e a definição do bloco com a sintaxe 'block content' -> 'endblock' eles servem para delimitar espaços no código que irão receber conteúdos dinâmicos. --> 
+    <!-- ====================================================================== -->
+
+    
+    <header>
+        <div class="logo">
+            <a href="/homepage">
+                <img src="" alt="">
+            </a>
+            <h2>Cinemalist</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="/perfil">Perfil</a>
+                    <a href="/filmes">Filmes</a>
+                    <a href="/cadastro">Cadastro</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido por <a href="#">especialistas do cinema</a></p>
+    </footer>
+
+
+</body>
+</html>

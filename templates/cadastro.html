@@ -1,0 +1,21 @@
+    <!-- ====================================================================== -->
+        <!-- Nesse arquivo estamos definindo o CREATE da nossa API, usando o formulário do html para digitar um filme novo e adicionar ele na lista de filmes.
+        No form, o atributo 'action' recebe o nome da função python que criamos (add_filme), o atributo 'mehtod' recebe o 'post' para enviar a informação via HTTP.
+        O Atributo 'name' do input text é importantissímo, é com ele que vamos acessar o valor no python usando o request.
+        O Atributo 'type' com o valor de submit é o que envia o formulário --> 
+    <!-- ====================================================================== -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form action="cadastrar_filme" method="post">
+
+        <label for="titulo">Titulo</label>
+        <input type="text" name="titulo" id="" placeholder="Digite aqui ">
+
+        <button type="submit">Adicionar</button>
+
+    </form>
+
+{% endblock %}

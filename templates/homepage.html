@@ -1,0 +1,28 @@
+<!-- ====================================================================== -->
+    <!-- Nesse arquivo extendemos o base e definimos a renderização da lista de filmes direto no html, usando um for do python. --> 
+<!-- ====================================================================== -->
+
+
+{% extends 'base.html'%}
+
+{% block content %}
+
+    <h2>Filmes em destaque</h2>
+
+    <div>
+        <img src="" alt="">
+        <p>{{filmes[0]}}</p>
+        <button>Favoritar</button>
+    </div>
+    <div>
+        <img src="" alt="">
+        <p>{{filmes[1]}}</p>
+        <button>Favoritar</button>
+    </div>
+    <div>
+        <img src="" alt="">
+        <p>{{filmes[2]}}</p>
+        <button>Favoritar</button>
+    </div>
+
+{% endblock %}

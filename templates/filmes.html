@@ -1,0 +1,19 @@
+<!-- ====================================================================== -->
+    <!-- Nesse arquivo extendemos o base e definimos a renderização da lista de filmes direto no html, usando um for do python. --> 
+<!-- ====================================================================== -->
+
+
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h2>Base de Filmes</h2>
+
+    <ul>
+    {% for f in filmes  %}
+    
+        <li>{{f}}</li>
+            
+    {% endfor %}
+    </ul>
+{% endblock %}
